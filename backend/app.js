@@ -10,7 +10,7 @@ const cookieParser = require('cookie-parser');
 
 // Enable CORS
 app.use(cors({
-  origin: "http://localhost:3000", // Frontend's URL (adjust as needed)
+  origin: "blood-and-stem-cell-donation-platfo.vercel.app", // Frontend's URL (adjust as needed)
   credentials: true, // Allow cookies to be sent with cross-origin requests
 }));
 
