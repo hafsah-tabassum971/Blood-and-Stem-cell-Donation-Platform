@@ -1,4 +1,6 @@
 import { useState, useEffect } from "react";
+import { useLocation } from 'react-router-dom';
+
 import axios from "axios";
 import styled from "styled-components";
 
@@ -113,6 +115,7 @@ const SlotManager = () => {
   const [month, setMonth] = useState("");         // For monthly generation
   const [message, setMessage] = useState(null);
   const [messageType, setMessageType] = useState(null); // 'success' or 'error'
+  const location = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);

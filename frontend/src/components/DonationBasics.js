@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate,useLocation } from "react-router-dom"; // Import useNavigate
 
 const DonationBasicsContainer = styled.div`
   padding-top: 20px;
@@ -309,6 +309,7 @@ const RecoveryContent = styled.p`
 
 function DonationBasics() {
   const navigate = useNavigate(); // Initialize the useNavigate hook
+  const location = useLocation();
 
     useEffect(() => {
     window.scrollTo(0, 0);

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate,useLocation } from "react-router-dom";
 import styled from "styled-components";
 
 // Home container with padding and background color
@@ -217,6 +217,7 @@ const navigate = useNavigate();
       setUserName(user.name);
     }
   }, []);
+  const location = useLocation();
 
     useEffect(() => {
       window.scrollTo(0, 0); // Scroll to top of the page when Login component is mounted

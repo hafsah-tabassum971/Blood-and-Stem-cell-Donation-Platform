@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate, useLocation } from "react-router-dom"; // Import useNavigate
 import {
   FaHeart,
   FaHandHoldingHeart,
@@ -254,6 +254,7 @@ const CallToActionButton = styled.a`
 
 // How Blood Donation Helps Section Component
 function HowBloodDonationHelps() {
+  const location = useLocation();
 
       useEffect(() => {
       window.scrollTo(0, 0);

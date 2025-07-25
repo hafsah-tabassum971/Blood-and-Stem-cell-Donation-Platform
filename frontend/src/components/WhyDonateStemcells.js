@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate, useLocation } from "react-router-dom"; // Import useNavigate
 import {
   FaHeart,
   FaHandHoldingHeart,
@@ -320,6 +320,7 @@ const StoryDescription = styled.p`
 
 // How Stem Cell Donation Helps Section Component
 function HowStemCellDonationHelps() {
+  const location = useLocation();
 
       useEffect(() => {
       window.scrollTo(0, 0);

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import styled from 'styled-components';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate for navigation
+import { useNavigate, useLocation } from 'react-router-dom'; // Import useNavigate for navigation
 import { FiUserCheck, FiHeart } from 'react-icons/fi';
 import { Link } from 'react-router-dom'; // Import Link for routing
 
@@ -322,6 +322,8 @@ const SectionImage = styled.img`
 
 function StemCellDonation() {
   const navigate = useNavigate(); // Initialize navigate inside the function
+    const location = useLocation();
+  
       useEffect(() => {
       window.scrollTo(0, 0);
     }, [location]);

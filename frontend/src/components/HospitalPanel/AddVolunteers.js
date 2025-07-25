@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from 'react-router-dom';
+
 import styled from "styled-components";
 import axios from "axios";
 
@@ -158,6 +160,7 @@ const AddVolunteers = () => {
   useEffect(() => {
     fetchVolunteers();
   }, []);
+  const location = useLocation();
 
   useEffect(() => {
     window.scrollTo(0, 0);

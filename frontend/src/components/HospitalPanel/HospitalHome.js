@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import styled from "styled-components";
 
 // Home container with padding and background color
@@ -193,6 +193,7 @@ const HospitalButton = styled.button`
 const HospitalHome = () => {
   const [hospitalName, setHospitalName] = useState("");
   const navigate = useNavigate();
+  const location = useLocation();
 
     useEffect(() => {
       window.scrollTo(0, 0);

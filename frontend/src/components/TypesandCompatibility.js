@@ -1,4 +1,6 @@
 import React, { useEffect } from "react";
+import { useLocation } from 'react-router-dom';
+
 import styled from "styled-components";
 import { FaTint, FaDna } from "react-icons/fa";
 
@@ -282,6 +284,7 @@ const TypesandCompatibility = () => {
         "Cord blood stem cells, collected from the umbilical cord after birth, are rich in hematopoietic stem cells. These cells are used for patients in need of a stem cell transplant, especially for pediatric cancers.",
     },
   ];
+  const location = useLocation();
 
 
       useEffect(() => {
