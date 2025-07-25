@@ -460,7 +460,7 @@ function CheckEligibility() {
               <p>{currentQuestion}</p>
             </QuestionBox>
 
-            {/* Render buttons only if the quiz is not completed */}
+            {/* Render buttons only if the quiz is not completed*/}
             {step <= bloodDonationQuestions.length && (
               <ButtonGroup>
                 <Button onClick={handleYes} variant="yes">Yes</Button>

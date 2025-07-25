@@ -90,7 +90,7 @@ function App() {
           <Route path="/stemcellappointment" element={<><DonorNavbar /><StemcellAppointment /></>} />
           <Route path="/viewhlastatus" element={<><DonorNavbar /><ViewHLAStatus /></>} />
 
-          {/* Hospital Panel Routes */}
+          {/* Hospital Panel Routes... */}
           <Route path="/hospitalhome" element={<><HospitalNavbar /><HospitalHome /></>} />
           <Route path="/hospitalprofile" element={<><HospitalNavbar /><HospitalProfile /></>} />
           <Route path="/createdrive" element={<><HospitalNavbar /><CreateDrive /></>} />
