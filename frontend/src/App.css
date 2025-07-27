@@ -3,3 +3,30 @@
     padding: 0;
 
   }
+
+  .loading-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.loader {
+  border: 8px solid #eee;
+  border-top: 8px solid #e60023; /* red accent */
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

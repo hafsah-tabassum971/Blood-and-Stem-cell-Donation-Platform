@@ -54,7 +54,12 @@ const AdminDashboard = lazy(() => import('./components/Admin Panel/AdminDashboar
 function App() {
   return (
     <Router>
-      <Suspense fallback={<div className="text-center p-5 text-lg">Loading...</div>}>
+<Suspense fallback={
+  <div className="loading-screen">
+    <div className="loader"></div>
+    <p>Loading...</p>
+  </div>
+}>
         <Routes>
 
           {/* Public Routes */}
