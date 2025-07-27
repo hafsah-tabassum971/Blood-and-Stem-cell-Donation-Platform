@@ -69,7 +69,9 @@ const DonationOption = styled.div`
   }
 `;
 
-const DonationImage = styled.img`
+const DonationImage = styled.img.attrs({
+  loading: "lazy",
+})` 
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -134,7 +136,9 @@ const HospitalSection = styled(Section)`
   }
 `;
 
-const HospitalImage = styled.img`
+const HospitalImage = styled.img.attrs({
+  loading: "lazy",
+})`
   width: 50%;
   border-radius: 10px;
   object-fit: cover;

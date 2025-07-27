@@ -94,7 +94,9 @@ const HeroImageContainer = styled.div`
   }
 `;
 
-const HeroImage = styled.img`
+const HeroImage = styled.img.attrs({
+  loading: 'lazy',
+})`
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -146,7 +148,9 @@ const ImageContainer = styled.div`
   }
 `;
 
-const SectionImage = styled.img`
+const SectionImage = styled.img.attrs({
+  loading: 'lazy',
+})`
   height: 500px;
   width: 50vw;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);

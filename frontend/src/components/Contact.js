@@ -210,6 +210,8 @@ function ContactUs() {
           <img
             src="/images/istockphoto-1371958166-612x612.jpg"
             alt="Customer Support"
+              loading="lazy"
+
           />
         </ImageContainer>
       </ContactSection>

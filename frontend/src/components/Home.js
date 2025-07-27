@@ -148,8 +148,9 @@ const DonationOption = styled.div`
   }
 `;
 
-const DonationImage = styled.img`
-  width: 100%;
+const DonationImage = styled.img.attrs({
+  loading: "lazy", // This enables lazy loading for all images
+})`  width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 10px;

@@ -73,8 +73,9 @@ const DonationOption = styled.div`
   }
 `;
 
-const DonationImage = styled.img`
-  width: 100%;
+const DonationImage = styled.img.attrs({
+  loading: "lazy",
+})`  width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
@@ -139,7 +140,9 @@ const AppointmentSection = styled(Section)`
   }
 `;
 
-const AppointmentImage = styled.img`
+const AppointmentImage = styled.img.attrs({
+  loading: "lazy",
+})`
   width: 40%;
   border-radius: 10px;
   object-fit: cover;

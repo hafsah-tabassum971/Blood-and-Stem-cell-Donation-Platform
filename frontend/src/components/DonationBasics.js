@@ -96,7 +96,9 @@ const HeroImageContainer = styled.div`
   }
 `;
 
-const HeroImage = styled.img`
+const HeroImage = styled.img.attrs({
+  loading: 'lazy',
+})`
   width: 100%;
   height: 100%;
   object-fit: cover;

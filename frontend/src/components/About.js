@@ -97,7 +97,9 @@ const ImageContainer = styled.div`
   }
 `;
 
-const SectionImage = styled.img`
+const SectionImage = styled.img.attrs({
+  loading: 'lazy',
+})`
   height: 100%;
   width: 50vw;
   border-radius: 10px;
