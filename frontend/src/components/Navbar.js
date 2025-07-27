@@ -410,7 +410,7 @@ function Navbar() {
         {/* Logo */}
         <Logo>
           <a href="/">
-            <img src="/images/logo12.png" alt="Donation Logo" />
+            <img src="/images/logo12.png" alt="Donation Logo" loading="lazy" />
           </a>
         </Logo>
 
