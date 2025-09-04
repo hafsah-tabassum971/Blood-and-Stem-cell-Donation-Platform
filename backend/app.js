@@ -8,19 +8,11 @@ const cookieParser = require('cookie-parser');
 //cors
 //app.use(cors());
 
-const allowedOrigins = process.env.FRONTEND_URL.split(",");
-
+// Enable CORS
 app.use(cors({
-  origin: function (origin, callback) {
-    if (!origin || allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
-  credentials: true,
+  origin: ["http://localhost:3000","https://blood-and-stem-cell-donation-platfo-ten.vercel.app"], // Frontend's URL (adjust as needed)
+  credentials: true, // Allow cookies to be sent with cross-origin requests
 }));
-
 
 // Disable ETag
 // app.disable("etag");
