@@ -176,15 +176,15 @@ const StartQuizButton = styled.button`
   color: white;
   background-color: #b00000;
   margin-top: 20px;
-  width: 500px;
-
+ width: 100%;      /* Full width of container */
+  max-width: 500px; /* Restrict max size on large screens */
   &:hover {
     background-color: rgb(158, 25, 18);
     transform: scale(1.05);
 
   }
       @media (max-width: 768px) {
-  width: 380px;
+    max-width: 100%;  /* Take full width on mobile */
 
   }
 `;

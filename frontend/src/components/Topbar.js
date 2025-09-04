@@ -25,10 +25,19 @@ const Nav = styled.div`
     font-size: 15px;
     color: #666;
     
-    @media (max-width: 400px) {
-    gap: 15px;
-        font-size: 14px;
+  @media (max-width: 768px) {
+    gap: 18px;
+    font-size: 14px;
+  }
 
+  @media (max-width: 480px) {
+    gap: 12px;
+    font-size: 12px;
+  }
+
+  @media (max-width: 360px) {
+    gap: 8px;
+    font-size: 11px;
   }
 `;
 

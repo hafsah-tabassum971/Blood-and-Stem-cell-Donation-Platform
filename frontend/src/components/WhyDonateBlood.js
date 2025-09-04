@@ -241,14 +241,18 @@ const CallToActionButton = styled.a`
   border-radius: 30px;
   font-size: 1.2rem;
   font-weight: bold;
+    display: inline-block;   // ensures it behaves like a button
+      max-width: 100%;         // prevent overflow
+
   transition: background-color 0.3s ease, color 0.3s ease;
 
   &:hover {
     background-color: rgb(158, 25, 18);
     color: white;
   }
-      @media (max-width: 768px) {
-   
+      @media (max-width: 400px) {
+     font-size: 1rem;
+
   }
 `;
 

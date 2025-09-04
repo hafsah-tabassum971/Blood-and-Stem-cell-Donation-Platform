@@ -20,6 +20,9 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+    @media (max-width: 450px) {
+  margin: 40px 10pxpx;
+  }
 `;
 
 const ProgressBar = styled.div`

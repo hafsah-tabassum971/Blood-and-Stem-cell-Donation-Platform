@@ -65,6 +65,11 @@ const InfoItem = styled.div`
   background: #f9f9f9;
   border-radius: 8px;
   border: 1px solid #eaeaea;
+    @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
 `;
 
 const InfoLabel = styled.span`

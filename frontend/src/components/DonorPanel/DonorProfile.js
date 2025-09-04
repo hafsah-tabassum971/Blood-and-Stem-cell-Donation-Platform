@@ -68,11 +68,23 @@ const InfoItem = styled.div`
   background: #f9f9f9;
   border-radius: 8px;
   border: 1px solid #eaeaea;
+  /* Only wrap on small screens */
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
 `;
 
 const InfoLabel = styled.span`
   font-weight: 600;
   color: #333;
+      @media (max-width: 550px) {
+    font-size:12px;
+  }
+        @media (max-width: 430px) {
+    font-size:9px;
+  }
 `;
 
 const InfoValue = styled.input`
