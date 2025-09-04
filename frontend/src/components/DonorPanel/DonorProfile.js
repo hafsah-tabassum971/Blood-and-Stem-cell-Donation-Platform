@@ -183,16 +183,7 @@ function DonorProfile() {
 
   const fetchDonorInfo = async () => {
     try {
-          const token = localStorage.getItem("token"); // <-- get token
-    if (!token) {
-      setInfoMessage({ text: "You must log in first.", success: false });
-      return;
-    }
-      const { data } = await axios.get(`${process.env.REACT_APP_BASE_URL}/profile`,  {
-        headers: {
-          Authorization: `Bearer ${token}`, // <-- send token
-        },
-      });
+      const { data } = await axios.get(`${process.env.REACT_APP_BASE_URL}/profile`, { withCredentials: true });
       console.log(data);
       const volunteerApps = data.donor.volunteerApplications || [];
       const latestApp = volunteerApps[volunteerApps.length - 1]; // Get the last application
