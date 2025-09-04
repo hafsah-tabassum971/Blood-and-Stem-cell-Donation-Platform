@@ -234,6 +234,8 @@ const Register = () => {
     }
 
     console.log("Validation successful. Proceeding with registration...");
+      console.log("BASE_URL =>", process.env.REACT_APP_BASE_URL);
+
 
     // Prepare the donor data object to send to the backend
     const donorData = {
